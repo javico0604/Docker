@@ -1,0 +1,18 @@
+name: Ejecutar Script en Docker
+
+on:
+  push:
+    branches:
+      - main  # Ajusta la rama según tu configuración
+
+jobs:
+  ejecutar-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del código
+      uses: actions/checkout@v2
+
+    - name: Construir y ejecutar contenedor Docker
+      run: |
+        ./script.sh
