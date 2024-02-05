@@ -8,6 +8,6 @@ public class MainController {
 
     @GetMapping("/")
     public String index(){
-        return  "No se que poner";
+        return  "Soy bobo";
     }
 }
